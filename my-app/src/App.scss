@@ -1,0 +1,88 @@
+@import "~bootstrap/scss/bootstrap";
+
+$cultured: #f9f8f8;
+$home: url("assets/images/home.jpg");
+
+header,
+section,
+main {
+	padding: 0.5rem 1rem;
+}
+
+.section {
+	position: relative;
+}
+
+a {
+	color: inherit;
+}
+
+.key-skills {
+	.list-group-item {
+		max-width: 150px;
+	}
+}
+
+.nav-link {
+	&.active {
+		font-weight: bold;
+	}
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+#info-item {
+	padding: 4px;
+}
+
+.carousel-indicators {
+	bottom: -50px;
+	li {
+		background-color: gray;
+	}
+}
+
+.card {
+	border-top: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.card-img-top {
+	width: 20rem;
+}
+
+.jumbotron {
+	background-image: $home;
+	background-position: center;
+	background-size: cover;
+}
+
+.img-eric {
+	max-width: fit-content;
+}
+
+.speech-bubble {
+	background: #efefef;
+	border-radius: 4px;
+	margin: 0 auto 40px 0;
+	padding: 15px;
+	position: relative;
+	p {
+		font-size: 1.2rem;
+		margin: 0 0 10px;
+		:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+	&::after {
+		border-left: 20px solid transparent;
+		border-top: 20px solid #efefef;
+		content: "";
+		left: -20px;
+		top: 20px;
+		position: absolute;
+	}
+}

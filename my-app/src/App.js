@@ -8,7 +8,7 @@ import "./assets/fontello/css/fontello.css";
 
 export default function App() {
   return (
-    <div>
+    <div className="content">
       <NavBar />
       <Switch>
         <Route path="/about">

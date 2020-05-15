@@ -17,6 +17,27 @@ a {
 	color: inherit;
 }
 
+.content {
+	min-height: calc(100vh - 70px);
+}
+
+.footer {
+	background-color: #f8f9fa !important;
+	font-size: 14px;
+	height: 100px;
+	padding-top: 20px;
+	text-align: center;
+	width: 100%;
+}
+
+.dot {
+	height: 25px;
+	width: 25px;
+	background-color: #0e76a8;
+	border-radius: 50%;
+	display: inline-block;
+}
+
 .key-skills {
 	.list-group-item {
 		max-width: 150px;

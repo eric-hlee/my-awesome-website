@@ -6,7 +6,7 @@ export default function KeySkills() {
 	return (
 		<Card className="key-skills">
 			<Card.Body>
-				<Card.Text>
+				<Card.Text as="div">
 					<Card.Title>Programming languages:</Card.Title>
 					<ListGroup horizontal="sm">
 						<ListGroup.Item>Python</ListGroup.Item>
@@ -29,6 +29,7 @@ export default function KeySkills() {
 						<ListGroup.Item>Redux</ListGroup.Item>
 						<ListGroup.Item>React-Router</ListGroup.Item>
 						<ListGroup.Item>React Intl</ListGroup.Item>
+						<ListGroup.Item>ExpressJS</ListGroup.Item>
 						<ListGroup.Item>DraftJS</ListGroup.Item>
 						<ListGroup.Item>Jest</ListGroup.Item>
 						<ListGroup.Item>Enzyme</ListGroup.Item>

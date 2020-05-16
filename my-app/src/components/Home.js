@@ -20,7 +20,7 @@ export default function Home() {
 								defaultMessage="Hello!"
 							/>
 						</h1>
-						<p>
+						<p className="white">
 							<FormattedMessage
 								id="home.whoami"
 								defaultMessage="My name is Eric."

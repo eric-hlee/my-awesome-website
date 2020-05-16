@@ -37,7 +37,7 @@ export default function WorkExperience(props) {
 										id="work.conv_jse"
 										defaultMessage="Junior Software Engineer"
 									/>
-									<span id="info-item">&#183;</span>
+									<span className="info-item">&#183;</span>
 									<FormattedMessage
 										id="work.conv_work_period"
 										defaultMessage="May 2019 – Apr 2020"
@@ -82,7 +82,7 @@ export default function WorkExperience(props) {
 										id="work.verv_tse"
 										defaultMessage="Technical Support Engineer"
 									/>
-									<span id="info-item">&#183;</span>
+									<span className="info-item">&#183;</span>
 									<FormattedMessage
 										id="work.verv_work_period"
 										defaultMessage="Oct 2018 – Apr 2019"
@@ -127,7 +127,7 @@ export default function WorkExperience(props) {
 										id="work.ibm_intern"
 										defaultMessage="e-Commerce Java Development Support Intern"
 									/>
-									<span id="info-item">&#183;</span>
+									<span className="info-item">&#183;</span>
 									<FormattedMessage
 										id="work.ibm_work_period"
 										defaultMessage="May 2016 – Apr 2018"
@@ -175,7 +175,7 @@ export default function WorkExperience(props) {
 										id="work.queensu_ta"
 										defaultMessage="Teaching Assistant"
 									/>
-									<span id="info-item">&#183;</span>
+									<span className="info-item">&#183;</span>
 									<FormattedMessage
 										id="work.queensu_work_period"
 										defaultMessage="Sep 2017 – Apr 2018"

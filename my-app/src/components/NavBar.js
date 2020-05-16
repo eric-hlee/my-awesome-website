@@ -15,7 +15,7 @@ export default function NavBar() {
           <Nav.Link href="/">
             <FormattedMessage id="navbar.home" defaultMessage="Home" />
           </Nav.Link>
-          <Nav.Link href="/about">
+          <Nav.Link href="/about" className="about">
             <FormattedMessage id="navbar.about" defaultMessage="About" />
           </Nav.Link>
         </Nav>

@@ -49,7 +49,7 @@ export default function WorkExperience(props) {
 										defaultMessage="London, United Kingdom"
 									/>
 								</Card.Subtitle>
-								<ListGroup variant="flush">
+								<ListGroup variant="flush" className="conversocial">
 									{workDescriptions.conversocial &&
 										workDescriptions.conversocial.map((desc, index) => (
 											<ListGroup.Item key={index}>{desc}</ListGroup.Item>
@@ -94,7 +94,7 @@ export default function WorkExperience(props) {
 										defaultMessage="London, United Kingdom"
 									/>
 								</Card.Subtitle>
-								<ListGroup variant="flush">
+								<ListGroup variant="flush" className="verv">
 									{workDescriptions.verv &&
 										workDescriptions.verv.map((desc, index) => (
 											<ListGroup.Item key={index}>{desc}</ListGroup.Item>
@@ -139,7 +139,7 @@ export default function WorkExperience(props) {
 										defaultMessage="Toronto, Canada"
 									/>
 								</Card.Subtitle>
-								<ListGroup variant="flush">
+								<ListGroup variant="flush" className="ibm">
 									{workDescriptions.ibm &&
 										workDescriptions.ibm.map((desc, index) => (
 											<ListGroup.Item key={index}>{desc}</ListGroup.Item>
@@ -187,7 +187,7 @@ export default function WorkExperience(props) {
 										defaultMessage="Kingston, Ontario"
 									/>
 								</Card.Subtitle>
-								<ListGroup variant="flush">
+								<ListGroup variant="flush" className="queensu">
 									{workDescriptions.queensu &&
 										workDescriptions.queensu.map((desc, index) => (
 											<ListGroup.Item key={index}>{desc}</ListGroup.Item>

@@ -13,7 +13,7 @@ describe("<App />", () => {
 
 	it("renders Home", () => {
 		const wrapper = mount(
-			<MemoryRouter>
+			<MemoryRouter initialEntries={[{ pathname: "/", key: "testKey" }]}>
 				<App />
 			</MemoryRouter>
 		);
@@ -22,16 +22,5 @@ describe("<App />", () => {
 		expect(
 			wrapper.find("Router").first().prop("history").location.pathname
 		).toEqual("/");
-	});
-
-	it("renders About", () => {
-		const wrapper = mount(
-			<MemoryRouter initialEntries={["/about"]}>
-				<App />
-			</MemoryRouter>
-		);
-		expect(
-			wrapper.find("Router").first().prop("history").location.pathname
-		).toEqual("/about");
 	});
 });

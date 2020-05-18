@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { IntlProvider } from "react-intl";
 import "@formatjs/intl-relativetimeformat/polyfill";
 import "@formatjs/intl-relativetimeformat/dist/locale-data/zh";
-import About from "./components/About";
 import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import "./App.scss";
@@ -24,7 +23,6 @@ export default function App() {
         <NavBar />
         <Router>
           <Switch>
-            <Route path="/about" component={About} />
             <Route exact path="/" component={Home} />
           </Switch>
         </Router>

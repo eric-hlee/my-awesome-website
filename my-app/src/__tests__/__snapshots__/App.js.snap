@@ -1,7 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<App /> renders Home 1`] = `
-<MemoryRouter>
+<MemoryRouter
+  initialEntries={
+    Array [
+      Object {
+        "key": "testKey",
+        "pathname": "/",
+      },
+    ]
+  }
+>
   <Router
     history={
       Object {
@@ -12,10 +21,9 @@ exports[`<App /> renders Home 1`] = `
         "entries": Array [
           Object {
             "hash": "",
-            "key": "5j6yzc",
+            "key": "testKey",
             "pathname": "/",
             "search": "",
-            "state": undefined,
           },
         ],
         "go": [Function],
@@ -26,10 +34,9 @@ exports[`<App /> renders Home 1`] = `
         "listen": [Function],
         "location": Object {
           "hash": "",
-          "key": "5j6yzc",
+          "key": "testKey",
           "pathname": "/",
           "search": "",
-          "state": undefined,
         },
         "push": [Function],
         "replace": [Function],
@@ -66,8 +73,6 @@ exports[`<App /> renders Home 1`] = `
               "home.life_as_dev_7": "🆕Open for new opportunities!",
               "home.resume": "Resume",
               "home.whoami": "My name is Eric.",
-              "navbar.about": "About",
-              "navbar.home": "Home",
               "navbar.text": "Eric Lee",
               "work.conv": "Conversocial",
               "work.conv_jse": "Junior Software Engineer",
@@ -131,160 +136,6 @@ exports[`<App /> renders Home 1`] = `
                     />
                   </button>
                 </NavbarToggle>
-                <NavbarCollapse
-                  id="basic-navbar-nav"
-                >
-                  <Collapse
-                    appear={false}
-                    dimension="height"
-                    getDimensionValue={[Function]}
-                    id="basic-navbar-nav"
-                    in={false}
-                    mountOnEnter={false}
-                    timeout={300}
-                    unmountOnExit={false}
-                  >
-                    <Transition
-                      addEndListener={[Function]}
-                      appear={false}
-                      aria-expanded={null}
-                      enter={true}
-                      exit={true}
-                      id="basic-navbar-nav"
-                      in={false}
-                      mountOnEnter={false}
-                      onEnter={[Function]}
-                      onEntered={[Function]}
-                      onEntering={[Function]}
-                      onExit={[Function]}
-                      onExited={[Function]}
-                      onExiting={[Function]}
-                      timeout={300}
-                      unmountOnExit={false}
-                    >
-                      <div
-                        aria-expanded={null}
-                        className="navbar-collapse collapse"
-                        id="basic-navbar-nav"
-                      >
-                        <Nav
-                          className="mr-auto"
-                          fill={false}
-                          justify={false}
-                        >
-                          <ForwardRef
-                            as="div"
-                            className="mr-auto navbar-nav"
-                            onSelect={[Function]}
-                          >
-                            <div
-                              className="mr-auto navbar-nav"
-                              onKeyDown={[Function]}
-                            >
-                              <NavLink
-                                as={
-                                  Object {
-                                    "$$typeof": Symbol(react.forward_ref),
-                                    "displayName": "SafeAnchor",
-                                    "render": [Function],
-                                  }
-                                }
-                                disabled={false}
-                                href="/"
-                              >
-                                <ForwardRef
-                                  as={
-                                    Object {
-                                      "$$typeof": Symbol(react.forward_ref),
-                                      "displayName": "SafeAnchor",
-                                      "render": [Function],
-                                    }
-                                  }
-                                  className="nav-link"
-                                  disabled={false}
-                                  href="/"
-                                >
-                                  <SafeAnchor
-                                    className="nav-link"
-                                    data-rb-event-key="/"
-                                    disabled={false}
-                                    href="/"
-                                    onClick={[Function]}
-                                  >
-                                    <a
-                                      className="nav-link"
-                                      data-rb-event-key="/"
-                                      href="/"
-                                      onClick={[Function]}
-                                      onKeyDown={[Function]}
-                                    >
-                                      <FormattedMessage
-                                        defaultMessage="Home"
-                                        id="navbar.home"
-                                        values={Object {}}
-                                      >
-                                        Home
-                                      </FormattedMessage>
-                                    </a>
-                                  </SafeAnchor>
-                                </ForwardRef>
-                              </NavLink>
-                              <NavLink
-                                as={
-                                  Object {
-                                    "$$typeof": Symbol(react.forward_ref),
-                                    "displayName": "SafeAnchor",
-                                    "render": [Function],
-                                  }
-                                }
-                                className="about"
-                                disabled={false}
-                                href="/about"
-                              >
-                                <ForwardRef
-                                  as={
-                                    Object {
-                                      "$$typeof": Symbol(react.forward_ref),
-                                      "displayName": "SafeAnchor",
-                                      "render": [Function],
-                                    }
-                                  }
-                                  className="about nav-link"
-                                  disabled={false}
-                                  href="/about"
-                                >
-                                  <SafeAnchor
-                                    className="about nav-link"
-                                    data-rb-event-key="/about"
-                                    disabled={false}
-                                    href="/about"
-                                    onClick={[Function]}
-                                  >
-                                    <a
-                                      className="about nav-link"
-                                      data-rb-event-key="/about"
-                                      href="/about"
-                                      onClick={[Function]}
-                                      onKeyDown={[Function]}
-                                    >
-                                      <FormattedMessage
-                                        defaultMessage="About"
-                                        id="navbar.about"
-                                        values={Object {}}
-                                      >
-                                        About
-                                      </FormattedMessage>
-                                    </a>
-                                  </SafeAnchor>
-                                </ForwardRef>
-                              </NavLink>
-                            </div>
-                          </ForwardRef>
-                        </Nav>
-                      </div>
-                    </Transition>
-                  </Collapse>
-                </NavbarCollapse>
               </nav>
             </Navbar>
           </NavBar>
@@ -554,26 +405,6 @@ exports[`<App /> renders Home 1`] = `
                                             🆕Open for new opportunities!
                                           </FormattedMessage>
                                         </li>
-                                        <li>
-                                          <span
-                                            aria-label="click on"
-                                            role="img"
-                                          >
-                                            ➡️
-                                          </span>
-                                          <a
-                                            className="underline"
-                                            href="/about"
-                                          >
-                                            <FormattedMessage
-                                              defaultMessage="Learn more about me"
-                                              id="home.learn_more"
-                                              values={Object {}}
-                                            >
-                                              Learn more about me
-                                            </FormattedMessage>
-                                          </a>
-                                        </li>
                                       </ul>
                                     </div>
                                   </div>
@@ -583,6 +414,1743 @@ exports[`<App /> renders Home 1`] = `
                           </div>
                         </Container>
                       </section>
+                      <About>
+                        <main>
+                          <Tabs
+                            defaultActiveKey="work-experience"
+                            id="about_tabs"
+                            mountOnEnter={false}
+                            unmountOnExit={false}
+                            variant="tabs"
+                          >
+                            <TabContainer
+                              activeKey="work-experience"
+                              id="about_tabs"
+                              mountOnEnter={false}
+                              onSelect={[Function]}
+                              unmountOnExit={false}
+                            >
+                              <Nav
+                                as="nav"
+                                fill={false}
+                                justify={false}
+                                role="tablist"
+                                variant="tabs"
+                              >
+                                <ForwardRef
+                                  as="nav"
+                                  className="nav nav-tabs"
+                                  onSelect={[Function]}
+                                  role="tablist"
+                                >
+                                  <nav
+                                    className="nav nav-tabs"
+                                    onKeyDown={[Function]}
+                                    role="tablist"
+                                  >
+                                    <NavItem
+                                      as={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "defaultProps": Object {
+                                            "as": Object {
+                                              "$$typeof": Symbol(react.forward_ref),
+                                              "displayName": "SafeAnchor",
+                                              "render": [Function],
+                                            },
+                                            "disabled": false,
+                                          },
+                                          "displayName": "NavLink",
+                                          "render": [Function],
+                                        }
+                                      }
+                                      eventKey="work-experience"
+                                      key=".0"
+                                    >
+                                      <NavLink
+                                        as={
+                                          Object {
+                                            "$$typeof": Symbol(react.forward_ref),
+                                            "displayName": "SafeAnchor",
+                                            "render": [Function],
+                                          }
+                                        }
+                                        className="nav-item"
+                                        disabled={false}
+                                        eventKey="work-experience"
+                                      >
+                                        <ForwardRef
+                                          as={
+                                            Object {
+                                              "$$typeof": Symbol(react.forward_ref),
+                                              "displayName": "SafeAnchor",
+                                              "render": [Function],
+                                            }
+                                          }
+                                          className="nav-item nav-link"
+                                          disabled={false}
+                                          eventKey="work-experience"
+                                        >
+                                          <SafeAnchor
+                                            aria-controls="about_tabs-tabpane-work-experience"
+                                            aria-selected={true}
+                                            className="nav-item nav-link active"
+                                            data-rb-event-key="work-experience"
+                                            disabled={false}
+                                            id="about_tabs-tab-work-experience"
+                                            onClick={[Function]}
+                                            role="tab"
+                                          >
+                                            <a
+                                              aria-controls="about_tabs-tabpane-work-experience"
+                                              aria-selected={true}
+                                              className="nav-item nav-link active"
+                                              data-rb-event-key="work-experience"
+                                              href="#"
+                                              id="about_tabs-tab-work-experience"
+                                              onClick={[Function]}
+                                              onKeyDown={[Function]}
+                                              role="tab"
+                                            >
+                                              <FormattedMessage
+                                                defaultMessage="📃 Work Experience"
+                                                id="about.work_experience"
+                                                values={Object {}}
+                                              >
+                                                📃 Work Experience
+                                              </FormattedMessage>
+                                            </a>
+                                          </SafeAnchor>
+                                        </ForwardRef>
+                                      </NavLink>
+                                    </NavItem>
+                                    <NavItem
+                                      as={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "defaultProps": Object {
+                                            "as": Object {
+                                              "$$typeof": Symbol(react.forward_ref),
+                                              "displayName": "SafeAnchor",
+                                              "render": [Function],
+                                            },
+                                            "disabled": false,
+                                          },
+                                          "displayName": "NavLink",
+                                          "render": [Function],
+                                        }
+                                      }
+                                      eventKey="education"
+                                      key=".1"
+                                    >
+                                      <NavLink
+                                        as={
+                                          Object {
+                                            "$$typeof": Symbol(react.forward_ref),
+                                            "displayName": "SafeAnchor",
+                                            "render": [Function],
+                                          }
+                                        }
+                                        className="nav-item"
+                                        disabled={false}
+                                        eventKey="education"
+                                      >
+                                        <ForwardRef
+                                          as={
+                                            Object {
+                                              "$$typeof": Symbol(react.forward_ref),
+                                              "displayName": "SafeAnchor",
+                                              "render": [Function],
+                                            }
+                                          }
+                                          className="nav-item nav-link"
+                                          disabled={false}
+                                          eventKey="education"
+                                        >
+                                          <SafeAnchor
+                                            aria-controls="about_tabs-tabpane-education"
+                                            aria-selected={false}
+                                            className="nav-item nav-link"
+                                            data-rb-event-key="education"
+                                            disabled={false}
+                                            id="about_tabs-tab-education"
+                                            onClick={[Function]}
+                                            role="tab"
+                                            tabIndex={-1}
+                                          >
+                                            <a
+                                              aria-controls="about_tabs-tabpane-education"
+                                              aria-selected={false}
+                                              className="nav-item nav-link"
+                                              data-rb-event-key="education"
+                                              href="#"
+                                              id="about_tabs-tab-education"
+                                              onClick={[Function]}
+                                              onKeyDown={[Function]}
+                                              role="tab"
+                                              tabIndex={-1}
+                                            >
+                                              <FormattedMessage
+                                                defaultMessage="🎓 Education"
+                                                id="about.education"
+                                                values={Object {}}
+                                              >
+                                                🎓 Education
+                                              </FormattedMessage>
+                                            </a>
+                                          </SafeAnchor>
+                                        </ForwardRef>
+                                      </NavLink>
+                                    </NavItem>
+                                    <NavItem
+                                      as={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "defaultProps": Object {
+                                            "as": Object {
+                                              "$$typeof": Symbol(react.forward_ref),
+                                              "displayName": "SafeAnchor",
+                                              "render": [Function],
+                                            },
+                                            "disabled": false,
+                                          },
+                                          "displayName": "NavLink",
+                                          "render": [Function],
+                                        }
+                                      }
+                                      eventKey="key-skills"
+                                      key=".2"
+                                    >
+                                      <NavLink
+                                        as={
+                                          Object {
+                                            "$$typeof": Symbol(react.forward_ref),
+                                            "displayName": "SafeAnchor",
+                                            "render": [Function],
+                                          }
+                                        }
+                                        className="nav-item"
+                                        disabled={false}
+                                        eventKey="key-skills"
+                                      >
+                                        <ForwardRef
+                                          as={
+                                            Object {
+                                              "$$typeof": Symbol(react.forward_ref),
+                                              "displayName": "SafeAnchor",
+                                              "render": [Function],
+                                            }
+                                          }
+                                          className="nav-item nav-link"
+                                          disabled={false}
+                                          eventKey="key-skills"
+                                        >
+                                          <SafeAnchor
+                                            aria-controls="about_tabs-tabpane-key-skills"
+                                            aria-selected={false}
+                                            className="nav-item nav-link"
+                                            data-rb-event-key="key-skills"
+                                            disabled={false}
+                                            id="about_tabs-tab-key-skills"
+                                            onClick={[Function]}
+                                            role="tab"
+                                            tabIndex={-1}
+                                          >
+                                            <a
+                                              aria-controls="about_tabs-tabpane-key-skills"
+                                              aria-selected={false}
+                                              className="nav-item nav-link"
+                                              data-rb-event-key="key-skills"
+                                              href="#"
+                                              id="about_tabs-tab-key-skills"
+                                              onClick={[Function]}
+                                              onKeyDown={[Function]}
+                                              role="tab"
+                                              tabIndex={-1}
+                                            >
+                                              <FormattedMessage
+                                                defaultMessage="🧰 Key Skills"
+                                                id="about.key_skills"
+                                                values={Object {}}
+                                              >
+                                                🧰 Key Skills
+                                              </FormattedMessage>
+                                            </a>
+                                          </SafeAnchor>
+                                        </ForwardRef>
+                                      </NavLink>
+                                    </NavItem>
+                                  </nav>
+                                </ForwardRef>
+                              </Nav>
+                              <ForwardRef>
+                                <div
+                                  className="tab-content"
+                                >
+                                  <TabPane
+                                    eventKey="work-experience"
+                                    key=".0"
+                                  >
+                                    <Fade
+                                      appear={false}
+                                      in={true}
+                                      mountOnEnter={false}
+                                      timeout={300}
+                                      unmountOnExit={false}
+                                    >
+                                      <Transition
+                                        addEndListener={[Function]}
+                                        appear={false}
+                                        enter={true}
+                                        exit={true}
+                                        in={true}
+                                        mountOnEnter={false}
+                                        onEnter={[Function]}
+                                        onEntered={[Function]}
+                                        onEntering={[Function]}
+                                        onExit={[Function]}
+                                        onExited={[Function]}
+                                        onExiting={[Function]}
+                                        timeout={300}
+                                        unmountOnExit={false}
+                                      >
+                                        <div
+                                          aria-hidden={false}
+                                          aria-labelledby="about_tabs-tab-work-experience"
+                                          className="fade tab-pane active show"
+                                          id="about_tabs-tabpane-work-experience"
+                                          role="tabpanel"
+                                        >
+                                          <WorkExperience
+                                            workDescriptions={
+                                              Object {
+                                                "conversocial": null,
+                                                "ibm": null,
+                                                "queensu": null,
+                                                "verv": null,
+                                              }
+                                            }
+                                          >
+                                            <Carousel
+                                              controls={false}
+                                              defaultActiveIndex={0}
+                                              fade={false}
+                                              indicators={true}
+                                              interval={5000}
+                                              keyboard={true}
+                                              nextIcon={
+                                                <span
+                                                  aria-hidden="true"
+                                                  className="carousel-control-next-icon"
+                                                />
+                                              }
+                                              nextLabel="Next"
+                                              pause="hover"
+                                              prevIcon={
+                                                <span
+                                                  aria-hidden="true"
+                                                  className="carousel-control-prev-icon"
+                                                />
+                                              }
+                                              prevLabel="Previous"
+                                              slide={true}
+                                              touch={true}
+                                              wrap={true}
+                                            >
+                                              <div
+                                                className="carousel slide"
+                                                onKeyDown={[Function]}
+                                                onMouseOut={[Function]}
+                                                onMouseOver={[Function]}
+                                                onTouchEnd={[Function]}
+                                                onTouchMove={[Function]}
+                                                onTouchStart={[Function]}
+                                              >
+                                                <ol
+                                                  className="carousel-indicators"
+                                                >
+                                                  <li
+                                                    className="active"
+                                                    key="0/.0"
+                                                    onClick={[Function]}
+                                                  />
+                                                  <li
+                                                    className={null}
+                                                    key="1/.1"
+                                                    onClick={[Function]}
+                                                  />
+                                                  <li
+                                                    className={null}
+                                                    key="2/.2"
+                                                    onClick={[Function]}
+                                                  />
+                                                  <li
+                                                    className={null}
+                                                    key="3/.3"
+                                                    onClick={[Function]}
+                                                  />
+                                                </ol>
+                                                <div
+                                                  className="carousel-inner"
+                                                >
+                                                  <Transition
+                                                    addEndListener={[Function]}
+                                                    appear={false}
+                                                    enter={true}
+                                                    exit={true}
+                                                    in={true}
+                                                    key=".0"
+                                                    mountOnEnter={false}
+                                                    onEnter={[Function]}
+                                                    onEntered={[Function]}
+                                                    onEntering={[Function]}
+                                                    onExit={[Function]}
+                                                    onExited={[Function]}
+                                                    onExiting={[Function]}
+                                                    unmountOnExit={false}
+                                                  >
+                                                    <CarouselItem
+                                                      className="active"
+                                                    >
+                                                      <div
+                                                        className="active carousel-item"
+                                                      >
+                                                        <Card
+                                                          body={false}
+                                                        >
+                                                          <div
+                                                            className="card"
+                                                          >
+                                                            <CardBody>
+                                                              <div
+                                                                className="card-body"
+                                                              >
+                                                                <Media>
+                                                                  <div
+                                                                    className="media"
+                                                                  >
+                                                                    <img
+                                                                      alt="Conversocial logo"
+                                                                      className="mr-3"
+                                                                      height={64}
+                                                                      src="test-file-stub"
+                                                                      width={64}
+                                                                    />
+                                                                    <MediaBody>
+                                                                      <div
+                                                                        className="media-body"
+                                                                      >
+                                                                        <CardTitle>
+                                                                          <ForwardRef
+                                                                            className="card-title"
+                                                                          >
+                                                                            <div
+                                                                              className="card-title h5"
+                                                                            >
+                                                                              <CardLink
+                                                                                href="http://www.conversocial.com/"
+                                                                                target="_blank"
+                                                                              >
+                                                                                <a
+                                                                                  className="card-link"
+                                                                                  href="http://www.conversocial.com/"
+                                                                                  target="_blank"
+                                                                                >
+                                                                                  <FormattedMessage
+                                                                                    defaultMessage="Conversocial"
+                                                                                    id="work.conv"
+                                                                                    values={Object {}}
+                                                                                  >
+                                                                                    Conversocial
+                                                                                  </FormattedMessage>
+                                                                                </a>
+                                                                              </CardLink>
+                                                                            </div>
+                                                                          </ForwardRef>
+                                                                        </CardTitle>
+                                                                        <CardSubtitle
+                                                                          className="mb-2 text-muted"
+                                                                        >
+                                                                          <ForwardRef
+                                                                            className="mb-2 text-muted card-subtitle"
+                                                                          >
+                                                                            <div
+                                                                              className="mb-2 text-muted card-subtitle h6"
+                                                                            >
+                                                                              <FormattedMessage
+                                                                                defaultMessage="Junior Software Engineer"
+                                                                                id="work.conv_jse"
+                                                                                values={Object {}}
+                                                                              >
+                                                                                Junior Software Engineer
+                                                                              </FormattedMessage>
+                                                                              <span
+                                                                                className="info-item"
+                                                                              >
+                                                                                ·
+                                                                              </span>
+                                                                              <FormattedMessage
+                                                                                defaultMessage="May 2019 – Apr 2020"
+                                                                                id="work.conv_work_period"
+                                                                                values={Object {}}
+                                                                              >
+                                                                                May 2019 – Apr 2020
+                                                                              </FormattedMessage>
+                                                                            </div>
+                                                                          </ForwardRef>
+                                                                        </CardSubtitle>
+                                                                        <CardSubtitle
+                                                                          className="mb-2 text-muted"
+                                                                        >
+                                                                          <ForwardRef
+                                                                            className="mb-2 text-muted card-subtitle"
+                                                                          >
+                                                                            <div
+                                                                              className="mb-2 text-muted card-subtitle h6"
+                                                                            >
+                                                                              <FormattedMessage
+                                                                                defaultMessage="London, United Kingdom"
+                                                                                id="work.london_uk"
+                                                                                values={Object {}}
+                                                                              >
+                                                                                London, United Kingdom
+                                                                              </FormattedMessage>
+                                                                            </div>
+                                                                          </ForwardRef>
+                                                                        </CardSubtitle>
+                                                                        <ListGroup
+                                                                          className="conversocial"
+                                                                          horizontal={null}
+                                                                          variant="flush"
+                                                                        >
+                                                                          <ForwardRef
+                                                                            as="div"
+                                                                            className="conversocial list-group list-group-flush"
+                                                                            onSelect={[Function]}
+                                                                          >
+                                                                            <div
+                                                                              className="conversocial list-group list-group-flush"
+                                                                              onKeyDown={[Function]}
+                                                                            />
+                                                                          </ForwardRef>
+                                                                        </ListGroup>
+                                                                      </div>
+                                                                    </MediaBody>
+                                                                  </div>
+                                                                </Media>
+                                                              </div>
+                                                            </CardBody>
+                                                          </div>
+                                                        </Card>
+                                                      </div>
+                                                    </CarouselItem>
+                                                  </Transition>
+                                                  <Transition
+                                                    addEndListener={[Function]}
+                                                    appear={false}
+                                                    enter={true}
+                                                    exit={true}
+                                                    in={false}
+                                                    key=".1"
+                                                    mountOnEnter={false}
+                                                    onEnter={null}
+                                                    onEntered={null}
+                                                    onEntering={[Function]}
+                                                    onExit={[Function]}
+                                                    onExited={[Function]}
+                                                    onExiting={[Function]}
+                                                    unmountOnExit={false}
+                                                  >
+                                                    <CarouselItem
+                                                      className=""
+                                                    >
+                                                      <div
+                                                        className="carousel-item"
+                                                      >
+                                                        <Card
+                                                          body={false}
+                                                        >
+                                                          <div
+                                                            className="card"
+                                                          >
+                                                            <CardBody>
+                                                              <div
+                                                                className="card-body"
+                                                              >
+                                                                <Media>
+                                                                  <div
+                                                                    className="media"
+                                                                  >
+                                                                    <img
+                                                                      alt="Verv logo"
+                                                                      className="mr-3"
+                                                                      height={64}
+                                                                      src="test-file-stub"
+                                                                      width={64}
+                                                                    />
+                                                                    <MediaBody>
+                                                                      <div
+                                                                        className="media-body"
+                                                                      >
+                                                                        <CardTitle>
+                                                                          <ForwardRef
+                                                                            className="card-title"
+                                                                          >
+                                                                            <div
+                                                                              className="card-title h5"
+                                                                            >
+                                                                              <CardLink
+                                                                                href="http://verv.energy/"
+                                                                                target="_blank"
+                                                                              >
+                                                                                <a
+                                                                                  className="card-link"
+                                                                                  href="http://verv.energy/"
+                                                                                  target="_blank"
+                                                                                >
+                                                                                  <FormattedMessage
+                                                                                    defaultMessage="Verv"
+                                                                                    id="work.verv"
+                                                                                    values={Object {}}
+                                                                                  >
+                                                                                    Verv
+                                                                                  </FormattedMessage>
+                                                                                </a>
+                                                                              </CardLink>
+                                                                            </div>
+                                                                          </ForwardRef>
+                                                                        </CardTitle>
+                                                                        <CardSubtitle
+                                                                          className="mb-2 text-muted"
+                                                                        >
+                                                                          <ForwardRef
+                                                                            className="mb-2 text-muted card-subtitle"
+                                                                          >
+                                                                            <div
+                                                                              className="mb-2 text-muted card-subtitle h6"
+                                                                            >
+                                                                              <FormattedMessage
+                                                                                defaultMessage="Technical Support Engineer"
+                                                                                id="work.verv_tse"
+                                                                                values={Object {}}
+                                                                              >
+                                                                                Technical Support Engineer
+                                                                              </FormattedMessage>
+                                                                              <span
+                                                                                className="info-item"
+                                                                              >
+                                                                                ·
+                                                                              </span>
+                                                                              <FormattedMessage
+                                                                                defaultMessage="Oct 2018 – Apr 2019"
+                                                                                id="work.verv_work_period"
+                                                                                values={Object {}}
+                                                                              >
+                                                                                Oct 2018 – Apr 2019
+                                                                              </FormattedMessage>
+                                                                            </div>
+                                                                          </ForwardRef>
+                                                                        </CardSubtitle>
+                                                                        <CardSubtitle
+                                                                          className="mb-2 text-muted"
+                                                                        >
+                                                                          <ForwardRef
+                                                                            className="mb-2 text-muted card-subtitle"
+                                                                          >
+                                                                            <div
+                                                                              className="mb-2 text-muted card-subtitle h6"
+                                                                            >
+                                                                              <FormattedMessage
+                                                                                defaultMessage="London, United Kingdom"
+                                                                                id="work.london_uk"
+                                                                                values={Object {}}
+                                                                              >
+                                                                                London, United Kingdom
+                                                                              </FormattedMessage>
+                                                                            </div>
+                                                                          </ForwardRef>
+                                                                        </CardSubtitle>
+                                                                        <ListGroup
+                                                                          className="verv"
+                                                                          horizontal={null}
+                                                                          variant="flush"
+                                                                        >
+                                                                          <ForwardRef
+                                                                            as="div"
+                                                                            className="verv list-group list-group-flush"
+                                                                            onSelect={[Function]}
+                                                                          >
+                                                                            <div
+                                                                              className="verv list-group list-group-flush"
+                                                                              onKeyDown={[Function]}
+                                                                            />
+                                                                          </ForwardRef>
+                                                                        </ListGroup>
+                                                                      </div>
+                                                                    </MediaBody>
+                                                                  </div>
+                                                                </Media>
+                                                              </div>
+                                                            </CardBody>
+                                                          </div>
+                                                        </Card>
+                                                      </div>
+                                                    </CarouselItem>
+                                                  </Transition>
+                                                  <Transition
+                                                    addEndListener={[Function]}
+                                                    appear={false}
+                                                    enter={true}
+                                                    exit={true}
+                                                    in={false}
+                                                    key=".2"
+                                                    mountOnEnter={false}
+                                                    onEnter={null}
+                                                    onEntered={null}
+                                                    onEntering={[Function]}
+                                                    onExit={[Function]}
+                                                    onExited={[Function]}
+                                                    onExiting={[Function]}
+                                                    unmountOnExit={false}
+                                                  >
+                                                    <CarouselItem
+                                                      className=""
+                                                    >
+                                                      <div
+                                                        className="carousel-item"
+                                                      >
+                                                        <Card
+                                                          body={false}
+                                                        >
+                                                          <div
+                                                            className="card"
+                                                          >
+                                                            <CardBody>
+                                                              <div
+                                                                className="card-body"
+                                                              >
+                                                                <Media>
+                                                                  <div
+                                                                    className="media"
+                                                                  >
+                                                                    <img
+                                                                      alt="IBM logo"
+                                                                      className="mr-3"
+                                                                      height={64}
+                                                                      src="test-file-stub"
+                                                                      width={64}
+                                                                    />
+                                                                    <MediaBody>
+                                                                      <div
+                                                                        className="media-body"
+                                                                      >
+                                                                        <CardTitle>
+                                                                          <ForwardRef
+                                                                            className="card-title"
+                                                                          >
+                                                                            <div
+                                                                              className="card-title h5"
+                                                                            >
+                                                                              <CardLink
+                                                                                href="http://www.ibm.com/"
+                                                                                target="_blank"
+                                                                              >
+                                                                                <a
+                                                                                  className="card-link"
+                                                                                  href="http://www.ibm.com/"
+                                                                                  target="_blank"
+                                                                                >
+                                                                                  <FormattedMessage
+                                                                                    defaultMessage="IBM"
+                                                                                    id="work.ibm"
+                                                                                    values={Object {}}
+                                                                                  >
+                                                                                    IBM
+                                                                                  </FormattedMessage>
+                                                                                </a>
+                                                                              </CardLink>
+                                                                            </div>
+                                                                          </ForwardRef>
+                                                                        </CardTitle>
+                                                                        <CardSubtitle
+                                                                          className="mb-2 text-muted"
+                                                                        >
+                                                                          <ForwardRef
+                                                                            className="mb-2 text-muted card-subtitle"
+                                                                          >
+                                                                            <div
+                                                                              className="mb-2 text-muted card-subtitle h6"
+                                                                            >
+                                                                              <FormattedMessage
+                                                                                defaultMessage="e-Commerce Java Development Support Intern"
+                                                                                id="work.ibm_intern"
+                                                                                values={Object {}}
+                                                                              >
+                                                                                e-Commerce Java Development Support Intern
+                                                                              </FormattedMessage>
+                                                                              <span
+                                                                                className="info-item"
+                                                                              >
+                                                                                ·
+                                                                              </span>
+                                                                              <FormattedMessage
+                                                                                defaultMessage="May 2016 – Apr 2018"
+                                                                                id="work.ibm_work_period"
+                                                                                values={Object {}}
+                                                                              >
+                                                                                May 2016 – Apr 2018
+                                                                              </FormattedMessage>
+                                                                            </div>
+                                                                          </ForwardRef>
+                                                                        </CardSubtitle>
+                                                                        <CardSubtitle
+                                                                          className="mb-2 text-muted"
+                                                                        >
+                                                                          <ForwardRef
+                                                                            className="mb-2 text-muted card-subtitle"
+                                                                          >
+                                                                            <div
+                                                                              className="mb-2 text-muted card-subtitle h6"
+                                                                            >
+                                                                              <FormattedMessage
+                                                                                defaultMessage="Toronto, Canada"
+                                                                                id="work.toronto_ca"
+                                                                                values={Object {}}
+                                                                              >
+                                                                                Toronto, Canada
+                                                                              </FormattedMessage>
+                                                                            </div>
+                                                                          </ForwardRef>
+                                                                        </CardSubtitle>
+                                                                        <ListGroup
+                                                                          className="ibm"
+                                                                          horizontal={null}
+                                                                          variant="flush"
+                                                                        >
+                                                                          <ForwardRef
+                                                                            as="div"
+                                                                            className="ibm list-group list-group-flush"
+                                                                            onSelect={[Function]}
+                                                                          >
+                                                                            <div
+                                                                              className="ibm list-group list-group-flush"
+                                                                              onKeyDown={[Function]}
+                                                                            />
+                                                                          </ForwardRef>
+                                                                        </ListGroup>
+                                                                      </div>
+                                                                    </MediaBody>
+                                                                  </div>
+                                                                </Media>
+                                                              </div>
+                                                            </CardBody>
+                                                          </div>
+                                                        </Card>
+                                                      </div>
+                                                    </CarouselItem>
+                                                  </Transition>
+                                                  <Transition
+                                                    addEndListener={[Function]}
+                                                    appear={false}
+                                                    enter={true}
+                                                    exit={true}
+                                                    in={false}
+                                                    key=".3"
+                                                    mountOnEnter={false}
+                                                    onEnter={null}
+                                                    onEntered={null}
+                                                    onEntering={[Function]}
+                                                    onExit={[Function]}
+                                                    onExited={[Function]}
+                                                    onExiting={[Function]}
+                                                    unmountOnExit={false}
+                                                  >
+                                                    <CarouselItem
+                                                      className=""
+                                                    >
+                                                      <div
+                                                        className="carousel-item"
+                                                      >
+                                                        <Card
+                                                          body={false}
+                                                        >
+                                                          <div
+                                                            className="card"
+                                                          >
+                                                            <CardBody>
+                                                              <div
+                                                                className="card-body"
+                                                              >
+                                                                <Media>
+                                                                  <div
+                                                                    className="media"
+                                                                  >
+                                                                    <img
+                                                                      alt="Queen's University logo"
+                                                                      className="mr-3"
+                                                                      height={64}
+                                                                      src="test-file-stub"
+                                                                      width={64}
+                                                                    />
+                                                                    <MediaBody>
+                                                                      <div
+                                                                        className="media-body"
+                                                                      >
+                                                                        <CardTitle>
+                                                                          <ForwardRef
+                                                                            className="card-title"
+                                                                          >
+                                                                            <div
+                                                                              className="card-title h5"
+                                                                            >
+                                                                              <CardLink
+                                                                                href="http://www.queensu.ca/"
+                                                                                target="_blank"
+                                                                              >
+                                                                                <a
+                                                                                  className="card-link"
+                                                                                  href="http://www.queensu.ca/"
+                                                                                  target="_blank"
+                                                                                >
+                                                                                  <FormattedMessage
+                                                                                    defaultMessage="Queen's University"
+                                                                                    id="work.queensu"
+                                                                                    values={Object {}}
+                                                                                  >
+                                                                                    Queen's University
+                                                                                  </FormattedMessage>
+                                                                                </a>
+                                                                              </CardLink>
+                                                                            </div>
+                                                                          </ForwardRef>
+                                                                        </CardTitle>
+                                                                        <CardSubtitle
+                                                                          className="mb-2 text-muted"
+                                                                        >
+                                                                          <ForwardRef
+                                                                            className="mb-2 text-muted card-subtitle"
+                                                                          >
+                                                                            <div
+                                                                              className="mb-2 text-muted card-subtitle h6"
+                                                                            >
+                                                                              <FormattedMessage
+                                                                                defaultMessage="Teaching Assistant"
+                                                                                id="work.queensu_ta"
+                                                                                values={Object {}}
+                                                                              >
+                                                                                Teaching Assistant
+                                                                              </FormattedMessage>
+                                                                              <span
+                                                                                className="info-item"
+                                                                              >
+                                                                                ·
+                                                                              </span>
+                                                                              <FormattedMessage
+                                                                                defaultMessage="Sep 2017 – Apr 2018"
+                                                                                id="work.queensu_work_period"
+                                                                                values={Object {}}
+                                                                              >
+                                                                                Sep 2017 – Apr 2018
+                                                                              </FormattedMessage>
+                                                                            </div>
+                                                                          </ForwardRef>
+                                                                        </CardSubtitle>
+                                                                        <CardSubtitle
+                                                                          className="mb-2 text-muted"
+                                                                        >
+                                                                          <ForwardRef
+                                                                            className="mb-2 text-muted card-subtitle"
+                                                                          >
+                                                                            <div
+                                                                              className="mb-2 text-muted card-subtitle h6"
+                                                                            >
+                                                                              <FormattedMessage
+                                                                                defaultMessage="Kingston, Ontario"
+                                                                                id="work.kingston_on"
+                                                                                values={Object {}}
+                                                                              >
+                                                                                Kingston, Ontario
+                                                                              </FormattedMessage>
+                                                                            </div>
+                                                                          </ForwardRef>
+                                                                        </CardSubtitle>
+                                                                        <ListGroup
+                                                                          className="queensu"
+                                                                          horizontal={null}
+                                                                          variant="flush"
+                                                                        >
+                                                                          <ForwardRef
+                                                                            as="div"
+                                                                            className="queensu list-group list-group-flush"
+                                                                            onSelect={[Function]}
+                                                                          >
+                                                                            <div
+                                                                              className="queensu list-group list-group-flush"
+                                                                              onKeyDown={[Function]}
+                                                                            />
+                                                                          </ForwardRef>
+                                                                        </ListGroup>
+                                                                      </div>
+                                                                    </MediaBody>
+                                                                  </div>
+                                                                </Media>
+                                                              </div>
+                                                            </CardBody>
+                                                          </div>
+                                                        </Card>
+                                                      </div>
+                                                    </CarouselItem>
+                                                  </Transition>
+                                                </div>
+                                              </div>
+                                            </Carousel>
+                                          </WorkExperience>
+                                        </div>
+                                      </Transition>
+                                    </Fade>
+                                  </TabPane>
+                                  <TabPane
+                                    eventKey="education"
+                                    key=".1"
+                                  >
+                                    <Fade
+                                      appear={false}
+                                      in={false}
+                                      mountOnEnter={false}
+                                      timeout={300}
+                                      unmountOnExit={false}
+                                    >
+                                      <Transition
+                                        addEndListener={[Function]}
+                                        appear={false}
+                                        enter={true}
+                                        exit={true}
+                                        in={false}
+                                        mountOnEnter={false}
+                                        onEnter={[Function]}
+                                        onEntered={[Function]}
+                                        onEntering={[Function]}
+                                        onExit={[Function]}
+                                        onExited={[Function]}
+                                        onExiting={[Function]}
+                                        timeout={300}
+                                        unmountOnExit={false}
+                                      >
+                                        <div
+                                          aria-hidden={true}
+                                          aria-labelledby="about_tabs-tab-education"
+                                          className="fade tab-pane"
+                                          id="about_tabs-tabpane-education"
+                                          role="tabpanel"
+                                        >
+                                          <Education>
+                                            <Card
+                                              body={false}
+                                            >
+                                              <div
+                                                className="card"
+                                              >
+                                                <CardLink
+                                                  href="http://www.queensu.ca/"
+                                                  target="_blank"
+                                                >
+                                                  <a
+                                                    className="card-link"
+                                                    href="http://www.queensu.ca/"
+                                                    target="_blank"
+                                                  >
+                                                    <CardImg
+                                                      src="test-file-stub"
+                                                      variant="top"
+                                                    >
+                                                      <img
+                                                        className="card-img-top"
+                                                        src="test-file-stub"
+                                                      />
+                                                    </CardImg>
+                                                  </a>
+                                                </CardLink>
+                                                <CardBody>
+                                                  <div
+                                                    className="card-body"
+                                                  >
+                                                    <CardTitle>
+                                                      <ForwardRef
+                                                        className="card-title"
+                                                      >
+                                                        <div
+                                                          className="card-title h5"
+                                                        >
+                                                          <FormattedMessage
+                                                            defaultMessage="Queen's University"
+                                                            id="education.queensu"
+                                                            values={Object {}}
+                                                          >
+                                                            Queen's University
+                                                          </FormattedMessage>
+                                                        </div>
+                                                      </ForwardRef>
+                                                    </CardTitle>
+                                                    <CardText>
+                                                      <p
+                                                        className="card-text"
+                                                      >
+                                                        <strong>
+                                                          <FormattedMessage
+                                                            defaultMessage="Bachelor of Computing (Honours)"
+                                                            id="education.degree"
+                                                            values={Object {}}
+                                                          >
+                                                            Bachelor of Computing (Honours)
+                                                          </FormattedMessage>
+                                                        </strong>
+                                                        <br />
+                                                        <FormattedMessage
+                                                          defaultMessage="Specialization in Software Design with Professional Internship"
+                                                          id="education.program"
+                                                          values={Object {}}
+                                                        >
+                                                          Specialization in Software Design with Professional Internship
+                                                        </FormattedMessage>
+                                                        <br />
+                                                        <FormattedMessage
+                                                          defaultMessage="Dean’s Honour List 2017-18"
+                                                          id="education.deans_list"
+                                                          values={Object {}}
+                                                        >
+                                                          Dean’s Honour List 2017-18
+                                                        </FormattedMessage>
+                                                      </p>
+                                                    </CardText>
+                                                  </div>
+                                                </CardBody>
+                                              </div>
+                                            </Card>
+                                          </Education>
+                                        </div>
+                                      </Transition>
+                                    </Fade>
+                                  </TabPane>
+                                  <TabPane
+                                    eventKey="key-skills"
+                                    key=".2"
+                                  >
+                                    <Fade
+                                      appear={false}
+                                      in={false}
+                                      mountOnEnter={false}
+                                      timeout={300}
+                                      unmountOnExit={false}
+                                    >
+                                      <Transition
+                                        addEndListener={[Function]}
+                                        appear={false}
+                                        enter={true}
+                                        exit={true}
+                                        in={false}
+                                        mountOnEnter={false}
+                                        onEnter={[Function]}
+                                        onEntered={[Function]}
+                                        onEntering={[Function]}
+                                        onExit={[Function]}
+                                        onExited={[Function]}
+                                        onExiting={[Function]}
+                                        timeout={300}
+                                        unmountOnExit={false}
+                                      >
+                                        <div
+                                          aria-hidden={true}
+                                          aria-labelledby="about_tabs-tab-key-skills"
+                                          className="fade tab-pane"
+                                          id="about_tabs-tabpane-key-skills"
+                                          role="tabpanel"
+                                        >
+                                          <KeySkills>
+                                            <Card
+                                              body={false}
+                                              className="key-skills"
+                                            >
+                                              <div
+                                                className="key-skills card"
+                                              >
+                                                <CardBody>
+                                                  <div
+                                                    className="card-body"
+                                                  >
+                                                    <CardText
+                                                      as="div"
+                                                    >
+                                                      <div
+                                                        className="card-text"
+                                                      >
+                                                        <CardTitle>
+                                                          <ForwardRef
+                                                            className="card-title"
+                                                          >
+                                                            <div
+                                                              className="card-title h5"
+                                                            >
+                                                              Programming languages:
+                                                            </div>
+                                                          </ForwardRef>
+                                                        </CardTitle>
+                                                        <ListGroup
+                                                          horizontal="sm"
+                                                          variant={null}
+                                                        >
+                                                          <ForwardRef
+                                                            as="div"
+                                                            className="list-group list-group-horizontal-sm"
+                                                            onSelect={[Function]}
+                                                          >
+                                                            <div
+                                                              className="list-group list-group-horizontal-sm"
+                                                              onKeyDown={[Function]}
+                                                            >
+                                                              <ListGroupItem
+                                                                active={false}
+                                                                disabled={false}
+                                                                variant={null}
+                                                              >
+                                                                <ForwardRef
+                                                                  as="div"
+                                                                  className="list-group-item"
+                                                                  disabled={false}
+                                                                  eventKey={null}
+                                                                  onClick={[Function]}
+                                                                >
+                                                                  <div
+                                                                    className="list-group-item"
+                                                                    data-rb-event-key={null}
+                                                                    disabled={false}
+                                                                    onClick={[Function]}
+                                                                  >
+                                                                    Python
+                                                                  </div>
+                                                                </ForwardRef>
+                                                              </ListGroupItem>
+                                                              <ListGroupItem
+                                                                active={false}
+                                                                disabled={false}
+                                                                variant={null}
+                                                              >
+                                                                <ForwardRef
+                                                                  as="div"
+                                                                  className="list-group-item"
+                                                                  disabled={false}
+                                                                  eventKey={null}
+                                                                  onClick={[Function]}
+                                                                >
+                                                                  <div
+                                                                    className="list-group-item"
+                                                                    data-rb-event-key={null}
+                                                                    disabled={false}
+                                                                    onClick={[Function]}
+                                                                  >
+                                                                    Java
+                                                                  </div>
+                                                                </ForwardRef>
+                                                              </ListGroupItem>
+                                                              <ListGroupItem
+                                                                active={false}
+                                                                disabled={false}
+                                                                variant={null}
+                                                              >
+                                                                <ForwardRef
+                                                                  as="div"
+                                                                  className="list-group-item"
+                                                                  disabled={false}
+                                                                  eventKey={null}
+                                                                  onClick={[Function]}
+                                                                >
+                                                                  <div
+                                                                    className="list-group-item"
+                                                                    data-rb-event-key={null}
+                                                                    disabled={false}
+                                                                    onClick={[Function]}
+                                                                  >
+                                                                    Bash
+                                                                  </div>
+                                                                </ForwardRef>
+                                                              </ListGroupItem>
+                                                            </div>
+                                                          </ForwardRef>
+                                                        </ListGroup>
+                                                        <br />
+                                                        <CardTitle>
+                                                          <ForwardRef
+                                                            className="card-title"
+                                                          >
+                                                            <div
+                                                              className="card-title h5"
+                                                            >
+                                                              Web/scripting languages:
+                                                            </div>
+                                                          </ForwardRef>
+                                                        </CardTitle>
+                                                        <ListGroup
+                                                          horizontal="sm"
+                                                          variant={null}
+                                                        >
+                                                          <ForwardRef
+                                                            as="div"
+                                                            className="list-group list-group-horizontal-sm"
+                                                            onSelect={[Function]}
+                                                          >
+                                                            <div
+                                                              className="list-group list-group-horizontal-sm"
+                                                              onKeyDown={[Function]}
+                                                            >
+                                                              <ListGroupItem
+                                                                active={false}
+                                                                disabled={false}
+                                                                variant={null}
+                                                              >
+                                                                <ForwardRef
+                                                                  as="div"
+                                                                  className="list-group-item"
+                                                                  disabled={false}
+                                                                  eventKey={null}
+                                                                  onClick={[Function]}
+                                                                >
+                                                                  <div
+                                                                    className="list-group-item"
+                                                                    data-rb-event-key={null}
+                                                                    disabled={false}
+                                                                    onClick={[Function]}
+                                                                  >
+                                                                    HTML
+                                                                  </div>
+                                                                </ForwardRef>
+                                                              </ListGroupItem>
+                                                              <ListGroupItem
+                                                                active={false}
+                                                                disabled={false}
+                                                                variant={null}
+                                                              >
+                                                                <ForwardRef
+                                                                  as="div"
+                                                                  className="list-group-item"
+                                                                  disabled={false}
+                                                                  eventKey={null}
+                                                                  onClick={[Function]}
+                                                                >
+                                                                  <div
+                                                                    className="list-group-item"
+                                                                    data-rb-event-key={null}
+                                                                    disabled={false}
+                                                                    onClick={[Function]}
+                                                                  >
+                                                                    CSS
+                                                                  </div>
+                                                                </ForwardRef>
+                                                              </ListGroupItem>
+                                                              <ListGroupItem
+                                                                active={false}
+                                                                disabled={false}
+                                                                variant={null}
+                                                              >
+                                                                <ForwardRef
+                                                                  as="div"
+                                                                  className="list-group-item"
+                                                                  disabled={false}
+                                                                  eventKey={null}
+                                                                  onClick={[Function]}
+                                                                >
+                                                                  <div
+                                                                    className="list-group-item"
+                                                                    data-rb-event-key={null}
+                                                                    disabled={false}
+                                                                    onClick={[Function]}
+                                                                  >
+                                                                    Sass
+                                                                  </div>
+                                                                </ForwardRef>
+                                                              </ListGroupItem>
+                                                              <ListGroupItem
+                                                                active={false}
+                                                                disabled={false}
+                                                                variant={null}
+                                                              >
+                                                                <ForwardRef
+                                                                  as="div"
+                                                                  className="list-group-item"
+                                                                  disabled={false}
+                                                                  eventKey={null}
+                                                                  onClick={[Function]}
+                                                                >
+                                                                  <div
+                                                                    className="list-group-item"
+                                                                    data-rb-event-key={null}
+                                                                    disabled={false}
+                                                                    onClick={[Function]}
+                                                                  >
+                                                                    JavaScript
+                                                                  </div>
+                                                                </ForwardRef>
+                                                              </ListGroupItem>
+                                                              <ListGroupItem
+                                                                active={false}
+                                                                disabled={false}
+                                                                variant={null}
+                                                              >
+                                                                <ForwardRef
+                                                                  as="div"
+                                                                  className="list-group-item"
+                                                                  disabled={false}
+                                                                  eventKey={null}
+                                                                  onClick={[Function]}
+                                                                >
+                                                                  <div
+                                                                    className="list-group-item"
+                                                                    data-rb-event-key={null}
+                                                                    disabled={false}
+                                                                    onClick={[Function]}
+                                                                  >
+                                                                    SQL
+                                                                  </div>
+                                                                </ForwardRef>
+                                                              </ListGroupItem>
+                                                            </div>
+                                                          </ForwardRef>
+                                                        </ListGroup>
+                                                        <br />
+                                                        <CardTitle>
+                                                          <ForwardRef
+                                                            className="card-title"
+                                                          >
+                                                            <div
+                                                              className="card-title h5"
+                                                            >
+                                                              Library/Frameworks:
+                                                            </div>
+                                                          </ForwardRef>
+                                                        </CardTitle>
+                                                        <ListGroup
+                                                          horizontal="sm"
+                                                          variant={null}
+                                                        >
+                                                          <ForwardRef
+                                                            as="div"
+                                                            className="list-group list-group-horizontal-sm"
+                                                            onSelect={[Function]}
+                                                          >
+                                                            <div
+                                                              className="list-group list-group-horizontal-sm"
+                                                              onKeyDown={[Function]}
+                                                            >
+                                                              <ListGroupItem
+                                                                active={false}
+                                                                disabled={false}
+                                                                variant={null}
+                                                              >
+                                                                <ForwardRef
+                                                                  as="div"
+                                                                  className="list-group-item"
+                                                                  disabled={false}
+                                                                  eventKey={null}
+                                                                  onClick={[Function]}
+                                                                >
+                                                                  <div
+                                                                    className="list-group-item"
+                                                                    data-rb-event-key={null}
+                                                                    disabled={false}
+                                                                    onClick={[Function]}
+                                                                  >
+                                                                    ReactJS
+                                                                  </div>
+                                                                </ForwardRef>
+                                                              </ListGroupItem>
+                                                              <ListGroupItem
+                                                                active={false}
+                                                                disabled={false}
+                                                                variant={null}
+                                                              >
+                                                                <ForwardRef
+                                                                  as="div"
+                                                                  className="list-group-item"
+                                                                  disabled={false}
+                                                                  eventKey={null}
+                                                                  onClick={[Function]}
+                                                                >
+                                                                  <div
+                                                                    className="list-group-item"
+                                                                    data-rb-event-key={null}
+                                                                    disabled={false}
+                                                                    onClick={[Function]}
+                                                                  >
+                                                                    Redux
+                                                                  </div>
+                                                                </ForwardRef>
+                                                              </ListGroupItem>
+                                                              <ListGroupItem
+                                                                active={false}
+                                                                disabled={false}
+                                                                variant={null}
+                                                              >
+                                                                <ForwardRef
+                                                                  as="div"
+                                                                  className="list-group-item"
+                                                                  disabled={false}
+                                                                  eventKey={null}
+                                                                  onClick={[Function]}
+                                                                >
+                                                                  <div
+                                                                    className="list-group-item"
+                                                                    data-rb-event-key={null}
+                                                                    disabled={false}
+                                                                    onClick={[Function]}
+                                                                  >
+                                                                    React-Router
+                                                                  </div>
+                                                                </ForwardRef>
+                                                              </ListGroupItem>
+                                                              <ListGroupItem
+                                                                active={false}
+                                                                disabled={false}
+                                                                variant={null}
+                                                              >
+                                                                <ForwardRef
+                                                                  as="div"
+                                                                  className="list-group-item"
+                                                                  disabled={false}
+                                                                  eventKey={null}
+                                                                  onClick={[Function]}
+                                                                >
+                                                                  <div
+                                                                    className="list-group-item"
+                                                                    data-rb-event-key={null}
+                                                                    disabled={false}
+                                                                    onClick={[Function]}
+                                                                  >
+                                                                    React Intl
+                                                                  </div>
+                                                                </ForwardRef>
+                                                              </ListGroupItem>
+                                                              <ListGroupItem
+                                                                active={false}
+                                                                disabled={false}
+                                                                variant={null}
+                                                              >
+                                                                <ForwardRef
+                                                                  as="div"
+                                                                  className="list-group-item"
+                                                                  disabled={false}
+                                                                  eventKey={null}
+                                                                  onClick={[Function]}
+                                                                >
+                                                                  <div
+                                                                    className="list-group-item"
+                                                                    data-rb-event-key={null}
+                                                                    disabled={false}
+                                                                    onClick={[Function]}
+                                                                  >
+                                                                    ExpressJS
+                                                                  </div>
+                                                                </ForwardRef>
+                                                              </ListGroupItem>
+                                                              <ListGroupItem
+                                                                active={false}
+                                                                disabled={false}
+                                                                variant={null}
+                                                              >
+                                                                <ForwardRef
+                                                                  as="div"
+                                                                  className="list-group-item"
+                                                                  disabled={false}
+                                                                  eventKey={null}
+                                                                  onClick={[Function]}
+                                                                >
+                                                                  <div
+                                                                    className="list-group-item"
+                                                                    data-rb-event-key={null}
+                                                                    disabled={false}
+                                                                    onClick={[Function]}
+                                                                  >
+                                                                    DraftJS
+                                                                  </div>
+                                                                </ForwardRef>
+                                                              </ListGroupItem>
+                                                              <ListGroupItem
+                                                                active={false}
+                                                                disabled={false}
+                                                                variant={null}
+                                                              >
+                                                                <ForwardRef
+                                                                  as="div"
+                                                                  className="list-group-item"
+                                                                  disabled={false}
+                                                                  eventKey={null}
+                                                                  onClick={[Function]}
+                                                                >
+                                                                  <div
+                                                                    className="list-group-item"
+                                                                    data-rb-event-key={null}
+                                                                    disabled={false}
+                                                                    onClick={[Function]}
+                                                                  >
+                                                                    Jest
+                                                                  </div>
+                                                                </ForwardRef>
+                                                              </ListGroupItem>
+                                                              <ListGroupItem
+                                                                active={false}
+                                                                disabled={false}
+                                                                variant={null}
+                                                              >
+                                                                <ForwardRef
+                                                                  as="div"
+                                                                  className="list-group-item"
+                                                                  disabled={false}
+                                                                  eventKey={null}
+                                                                  onClick={[Function]}
+                                                                >
+                                                                  <div
+                                                                    className="list-group-item"
+                                                                    data-rb-event-key={null}
+                                                                    disabled={false}
+                                                                    onClick={[Function]}
+                                                                  >
+                                                                    Enzyme
+                                                                  </div>
+                                                                </ForwardRef>
+                                                              </ListGroupItem>
+                                                            </div>
+                                                          </ForwardRef>
+                                                        </ListGroup>
+                                                        <br />
+                                                        <CardTitle>
+                                                          <ForwardRef
+                                                            className="card-title"
+                                                          >
+                                                            <div
+                                                              className="card-title h5"
+                                                            >
+                                                              Other technologies:
+                                                            </div>
+                                                          </ForwardRef>
+                                                        </CardTitle>
+                                                        <ListGroup
+                                                          horizontal="sm"
+                                                          variant={null}
+                                                        >
+                                                          <ForwardRef
+                                                            as="div"
+                                                            className="list-group list-group-horizontal-sm"
+                                                            onSelect={[Function]}
+                                                          >
+                                                            <div
+                                                              className="list-group list-group-horizontal-sm"
+                                                              onKeyDown={[Function]}
+                                                            >
+                                                              <ListGroupItem
+                                                                active={false}
+                                                                disabled={false}
+                                                                variant={null}
+                                                              >
+                                                                <ForwardRef
+                                                                  as="div"
+                                                                  className="list-group-item"
+                                                                  disabled={false}
+                                                                  eventKey={null}
+                                                                  onClick={[Function]}
+                                                                >
+                                                                  <div
+                                                                    className="list-group-item"
+                                                                    data-rb-event-key={null}
+                                                                    disabled={false}
+                                                                    onClick={[Function]}
+                                                                  >
+                                                                    Docker
+                                                                  </div>
+                                                                </ForwardRef>
+                                                              </ListGroupItem>
+                                                              <ListGroupItem
+                                                                active={false}
+                                                                disabled={false}
+                                                                variant={null}
+                                                              >
+                                                                <ForwardRef
+                                                                  as="div"
+                                                                  className="list-group-item"
+                                                                  disabled={false}
+                                                                  eventKey={null}
+                                                                  onClick={[Function]}
+                                                                >
+                                                                  <div
+                                                                    className="list-group-item"
+                                                                    data-rb-event-key={null}
+                                                                    disabled={false}
+                                                                    onClick={[Function]}
+                                                                  >
+                                                                    Git
+                                                                  </div>
+                                                                </ForwardRef>
+                                                              </ListGroupItem>
+                                                              <ListGroupItem
+                                                                active={false}
+                                                                disabled={false}
+                                                                variant={null}
+                                                              >
+                                                                <ForwardRef
+                                                                  as="div"
+                                                                  className="list-group-item"
+                                                                  disabled={false}
+                                                                  eventKey={null}
+                                                                  onClick={[Function]}
+                                                                >
+                                                                  <div
+                                                                    className="list-group-item"
+                                                                    data-rb-event-key={null}
+                                                                    disabled={false}
+                                                                    onClick={[Function]}
+                                                                  >
+                                                                    GitHub
+                                                                  </div>
+                                                                </ForwardRef>
+                                                              </ListGroupItem>
+                                                              <ListGroupItem
+                                                                active={false}
+                                                                disabled={false}
+                                                                variant={null}
+                                                              >
+                                                                <ForwardRef
+                                                                  as="div"
+                                                                  className="list-group-item"
+                                                                  disabled={false}
+                                                                  eventKey={null}
+                                                                  onClick={[Function]}
+                                                                >
+                                                                  <div
+                                                                    className="list-group-item"
+                                                                    data-rb-event-key={null}
+                                                                    disabled={false}
+                                                                    onClick={[Function]}
+                                                                  >
+                                                                    Webpack
+                                                                  </div>
+                                                                </ForwardRef>
+                                                              </ListGroupItem>
+                                                            </div>
+                                                          </ForwardRef>
+                                                        </ListGroup>
+                                                      </div>
+                                                    </CardText>
+                                                  </div>
+                                                </CardBody>
+                                              </div>
+                                            </Card>
+                                          </KeySkills>
+                                        </div>
+                                      </Transition>
+                                    </Fade>
+                                  </TabPane>
+                                </div>
+                              </ForwardRef>
+                            </TabContainer>
+                          </Tabs>
+                        </main>
+                      </About>
                     </main>
                     <Footer>
                       <footer
@@ -659,8 +2227,6 @@ exports[`<App /> renders IntlProvider, NavBar, BrowserRouter, Switch and Route 1
         "home.life_as_dev_7": "🆕Open for new opportunities!",
         "home.resume": "Resume",
         "home.whoami": "My name is Eric.",
-        "navbar.about": "About",
-        "navbar.home": "Home",
         "navbar.text": "Eric Lee",
         "work.conv": "Conversocial",
         "work.conv_jse": "Junior Software Engineer",
@@ -685,10 +2251,6 @@ exports[`<App /> renders IntlProvider, NavBar, BrowserRouter, Switch and Route 1
     <NavBar />
     <BrowserRouter>
       <Switch>
-        <Route
-          component={[Function]}
-          path="/about"
-        />
         <Route
           component={[Function]}
           exact={true}

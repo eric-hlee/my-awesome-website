@@ -6,6 +6,7 @@ import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import Row from "react-bootstrap/Row";
+import About from "./About";
 import Footer from "./Footer";
 
 export default function Home() {
@@ -15,10 +16,7 @@ export default function Home() {
 				<header>
 					<Jumbotron>
 						<h1>
-							<FormattedMessage
-								id="home.greeting"
-								defaultMessage="Hello!"
-							/>
+							<FormattedMessage id="home.greeting" defaultMessage="Hello!" />
 						</h1>
 						<p className="white">
 							<FormattedMessage
@@ -32,10 +30,7 @@ export default function Home() {
 								href="http://localhost:9000/resume"
 								className="icon-download"
 							>
-								<FormattedMessage
-									id="home.resume"
-									defaultMessage="Resume"
-								/>
+								<FormattedMessage id="home.resume" defaultMessage="Resume" />
 							</Button>
 						</p>
 					</Jumbotron>
@@ -105,29 +100,13 @@ export default function Home() {
 												defaultMessage="Got laid off due to Covid-19 and looking for new opportunities!"
 											/>
 										</li>
-										<li>
-											<span
-												role="img"
-												aria-label="click on"
-											>
-												➡️
-											</span>
-											<a
-												href="/about"
-												className="underline"
-											>
-												<FormattedMessage
-													id="home.learn_more"
-													defaultMessage="Learn more about me"
-												/>
-											</a>
-										</li>
 									</ul>
 								</div>
 							</Col>
 						</Row>
 					</Container>
 				</section>
+				<About />
 			</main>
 			<Footer />
 		</React.Fragment>

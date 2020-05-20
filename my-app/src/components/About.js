@@ -14,9 +14,14 @@ export default function About() {
 		queensu: null,
 	});
 
+	const getWorkDescriptions = async () => {
+		let response = await fetch("https://morning-garden-95959.herokuapp.com/about");
+		let data = await response.json();
+		return data;
+	};
+
 	useEffect(() => {
-		fetch("http://localhost:9000/about")
-			.then((res) => res.json())
+		getWorkDescriptions()
 			.then((res) => res[0])
 			.then((res) =>
 				setWorkDescriptions({

@@ -1,19 +1,19 @@
-import React, { useState } from 'react'
-import PropTypes from 'prop-types'
-import { FormattedMessage } from 'react-intl'
-import Card from 'react-bootstrap/Card'
-import Carousel from 'react-bootstrap/Carousel'
-import ListGroup from 'react-bootstrap/ListGroup'
-import Media from 'react-bootstrap/Media'
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+import { FormattedMessage } from 'react-intl';
+import Card from 'react-bootstrap/Card';
+import Carousel from 'react-bootstrap/Carousel';
+import ListGroup from 'react-bootstrap/ListGroup';
+import Media from 'react-bootstrap/Media';
 
-export default function WorkExperience (props) {
-  const [index, setIndex] = useState(2)
+export default function WorkExperience(props) {
+  const [index, setIndex] = useState(2);
 
   const handleSelect = (selectedIndex) => {
-    setIndex(selectedIndex)
-  }
+    setIndex(selectedIndex);
+  };
 
-  const { workDescriptions } = props
+  const { workDescriptions } = props;
   return (
     <Carousel activeIndex={index} controls={false} onSelect={handleSelect}>
       <Carousel.Item>
@@ -206,14 +206,9 @@ export default function WorkExperience (props) {
         </Card>
       </Carousel.Item>
     </Carousel>
-  )
+  );
 }
 
 WorkExperience.propTypes = {
-  workDescriptions: {
-    conversocial: PropTypes.array.isRequired,
-    verv: PropTypes.array.isRequired,
-    ibm: PropTypes.array.isRequired,
-    queensu: PropTypes.array.isRequired
-  }
-}
+  workDescriptions: PropTypes.object.isRequired,
+};

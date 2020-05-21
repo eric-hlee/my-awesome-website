@@ -8,7 +8,7 @@ import Education from './Education'
 import KeySkills from './KeySkills'
 
 export default function About () {
-  const [loading, setLoading] = useState(true)
+  const [isLoading, setLoading] = useState(true)
   const [workDescriptions, setWorkDescriptions] = useState({
     conversocial: null,
     verv: null,
@@ -56,7 +56,7 @@ export default function About () {
     <main>
       <Tabs defaultActiveKey="work-experience" id="about_tabs">
         <Tab
-          className={loading ? 'loading' : ''}
+          className={isLoading ? 'loading' : ''}
           eventKey="work-experience"
           title={
             <FormattedMessage
